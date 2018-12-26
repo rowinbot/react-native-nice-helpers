@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "prettier": "^1.15.3"
+  },
+  "peerDependencies": {
+    "react": "*"
   }
 }
