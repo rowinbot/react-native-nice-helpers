@@ -1,11 +1,11 @@
 {
-  "name": "nice-react-helpers",
+  "name": "react-native-nice-helpers",
   "version": "1.1.0",
   "description": "Awesome helpers for React and/or ReactNative developers that adds stuff one usually need",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rowinbot/nice-react-helpers.git"
+    "url": "git@github.com:rowinbot/react-native-nice-helpers.git"
   },
   "keywords": [
     "react",
@@ -18,9 +18,9 @@
   "author": "Rowin Hernandez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rowinbot/nice-react-helpers/issues"
+    "url": "https://github.com/rowinbot/react-native-nice-helpers/issues"
   },
-  "homepage": "https://github.com/rowinbot/nice-react-helpers#readme",
+  "homepage": "https://github.com/rowinbot/react-native-nice-helpers#readme",
   "dependencies": {
     "snakecase-keys": "^2.1.0",
     "validate.js": "^0.12.0"
