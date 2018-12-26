@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/rowinbot/react-nice-helpers/issues"
   },
-  "homepage": "https://github.com/rowinbot/react-nice-helpers#readme"
+  "homepage": "https://github.com/rowinbot/react-nice-helpers#readme",
+  "dependencies": {
+    "snakecase-keys": "^2.1.0",
+    "validate.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
 }
