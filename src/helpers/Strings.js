@@ -1,4 +1,6 @@
+import { Text } from 'react-native'
 import { isEmpty } from './Conditionals'
+import { DEFAULT_FONT, DEFAULT_FONT_TYPE } from '../constants/projectConstants'
 
 /* Returns the last word of a URL (string) */
 export const lastWord = str => str.split('/').pop()
@@ -25,18 +27,16 @@ export const capitalizeTitle = str =>
         .join(' ')
     : ''
 
-export const camelToSnake = str =>
-  str.replace(/([A-Z])/g, $1 => '_'.concat($1.toLocaleLowerCase()))
+export const camelToSnake = str => str.replace(/([A-Z])/g, $1 => '_'.concat($1.toLocaleLowerCase()))
 
-export const addBearer = str =>
-  str ? (str.startsWith('Bearer') ? `Bearer ${str}` : str) : null
+export const addBearer = str => (str ? (str.startsWith('Bearer') ? `Bearer ${str}` : str) : null)
 
-export const ensureNotScalingRN = Text => {
+export const ensureNotScaling = () => {
   if (isEmpty(Text.defaultProps)) Text.defaultProps = {}
 
   Text.defaultProps.allowFontScaling = false
 }
 
-export const getFont = (type, font) => `${font}-${type}`
+export const getFont = (type, font) => `${font || DEFAULT_FONT}-${type || DEFAULT_FONT_TYPE}`
 
 export const renderNewLines = html => html.replace(/\n/g, '</br>')

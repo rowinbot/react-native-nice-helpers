@@ -5,7 +5,7 @@ import providesTheme from './providesTheme'
 
 export const { Provider, Consumer } = createContext(null)
 
-const providesColors = (WrappedComponent, colors) => {
+const providesColors = (colors, WrappedComponent) => {
   class HoCComponent extends PureComponent {
     render() {
       const { innerRef, ...props } = this.props

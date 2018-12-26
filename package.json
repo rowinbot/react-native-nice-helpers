@@ -29,6 +29,8 @@
     "prettier": "^1.15.3"
   },
   "peerDependencies": {
-    "react": "*"
+    "react": "*",
+    "react-native": "*",
+    "react-navigation": "*"
   }
 }
