@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rowinbot/react-nice-helpers.git"
+    "url": "git@github.com:rowinbot/nice-react-helpers.git"
   },
   "keywords": [
     "react",
@@ -18,9 +18,9 @@
   "author": "Rowin Hernandez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rowinbot/react-nice-helpers/issues"
+    "url": "https://github.com/rowinbot/nice-react-helpers/issues"
   },
-  "homepage": "https://github.com/rowinbot/react-nice-helpers#readme",
+  "homepage": "https://github.com/rowinbot/nice-react-helpers#readme",
   "dependencies": {
     "snakecase-keys": "^2.1.0",
     "validate.js": "^0.12.0"
