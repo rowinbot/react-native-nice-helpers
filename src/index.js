@@ -24,7 +24,7 @@ export * from './helpers/Validate'
 
 // HoCs
 export { default as asNavigator } from './hocs/asNavigator'
-export * from './helpers/asNavigator'
+export * from './hocs/asNavigator'
 
 export { default as injectProps } from './hocs/injectProps'
 export * from './hocs/injectProps'
