@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { BackHandler } from 'react-native'
-import { withNavigation } from 'react-navigation'
 
 const withBackHandler = WrappedComponent => {
   class Wrapper extends Component {
@@ -17,12 +16,12 @@ const withBackHandler = WrappedComponent => {
     }
 
     render() {
-      const { navigation: _navigation, ...props } = this.props
+      const { ...props } = this.props
 
       return <WrappedComponent {...props} />
     }
   }
-  return withNavigation(Wrapper)
+  return Wrapper
 }
 
 export default withBackHandler
