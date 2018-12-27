@@ -91,5 +91,3 @@ export const findIn = (array, key, value) => {
     }
   }
 }
-
-export const isEmpty = array => !array || (!!array && array.length <= 0)
