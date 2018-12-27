@@ -1,6 +1,15 @@
 import { Text } from 'react-native'
 import { isEmpty } from './Conditionals'
-import { DEFAULT_FONT, DEFAULT_FONT_TYPE } from '../constants/projectConstants'
+
+export class FontLocaleUse {
+  static DEFAULT_FONT = 'OpenSans'
+  static DEFAULT_FONT_TYPE = 'Regular'
+
+  static initialize(font, fontType) {
+    TimeLocaleUse.DEFAULT_FONT = font
+    TimeLocaleUse.DEFAULT_FONT_TYPE = fontType
+  }
+}
 
 /* Returns the last word of a URL (string) */
 export const lastWord = str => str.split('/').pop()
@@ -27,9 +36,11 @@ export const capitalizeTitle = str =>
         .join(' ')
     : ''
 
-export const camelToSnake = str => str.replace(/([A-Z])/g, $1 => '_'.concat($1.toLocaleLowerCase()))
+export const camelToSnake = str =>
+  str.replace(/([A-Z])/g, $1 => '_'.concat($1.toLocaleLowerCase()))
 
-export const addBearer = str => (str ? (str.startsWith('Bearer') ? `Bearer ${str}` : str) : null)
+export const addBearer = str =>
+  str ? (str.startsWith('Bearer') ? `Bearer ${str}` : str) : null
 
 export const ensureNotScaling = () => {
   if (isEmpty(Text.defaultProps)) Text.defaultProps = {}
@@ -37,6 +48,8 @@ export const ensureNotScaling = () => {
   Text.defaultProps.allowFontScaling = false
 }
 
-export const getFont = (type, font) => `${font || DEFAULT_FONT}-${type || DEFAULT_FONT_TYPE}`
+export const getFont = (type, font) =>
+  `${font || FontLocaleUse.DEFAULT_FONT}-${type ||
+    FontLocaleUse.DEFAULT_FONT_TYPE}`
 
 export const renderNewLines = html => html.replace(/\n/g, '</br>')
