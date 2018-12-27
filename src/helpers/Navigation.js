@@ -1,7 +1,14 @@
 import React from 'react'
-import BottomTabBarButton from '../controls/Button/BottomTabBarButton'
 import changesStatusBar from '../hocs/changesStatusBar'
 import { getType } from './Types'
+
+export class NavigationUse {
+  static BottomButton = () => {}
+
+  static initialize(BottomButton) {
+    NavigationUse.BottomButton = BottomButton
+  }
+}
 
 /**
  * Simple screen with no header.
@@ -49,6 +56,8 @@ export const stackNavigator = (initialScreenName, config = {}) => {
 }
 
 export const bottomTabScreen = (Screen, statusBarStyle) => {
+  const BottomTabBarButton = NavigationUse.BottomButton
+
   return ({ Icon, Text, Button, onPress }) => ({
     screen: statusBarStyle ? changesStatusBar(Screen, statusBarStyle) : Screen,
     navigationOptions: {
