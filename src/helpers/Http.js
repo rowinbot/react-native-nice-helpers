@@ -1,12 +1,12 @@
 import camelize from './modules/camelize'
 import snakeize from 'snakecase-keys'
 
-export class HTTPUseHeaders {
+export class HTTPLocaleUseHeaders {
   static headers = {}
 
   static setHeader(name, value) {
-    HTTPUseHeaders.headers = {
-      ...HTTPUseHeaders.headers,
+    HTTPLocaleUseHeaders.headers = {
+      ...HTTPLocaleUseHeaders.headers,
       [name]: value
     }
   }
@@ -24,7 +24,7 @@ const apiCall = (url, options, headers) => {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
         Accept: 'application/json',
-        ...HTTPUseHeaders.headers,
+        ...HTTPLocaleUseHeaders.headers,
         ...headers
       }
     })
