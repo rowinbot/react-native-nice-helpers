@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/rowinbot/react-native-nice-helpers#readme",
   "dependencies": {
+    "add-px-to-style": "^1.0.0",
+    "hyphenate-style-name": "^1.0.2",
     "snakecase-keys": "^2.1.0",
     "validate.js": "^0.12.0"
   },

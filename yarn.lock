@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+add-px-to-style@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/add-px-to-style/-/add-px-to-style-1.0.0.tgz#d0c135441fa8014a8137904531096f67f28f263a"
+  integrity sha1-0ME1RB+oAUqBN5BFMQlvZ/KPJjo=
+
+hyphenate-style-name@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
+  integrity sha1-MRYKNpMK2vH8BMYHT360FGXU7Es=
+
 map-obj@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-3.0.0.tgz#4221cc62360f88c0735f9e7c0813bd889657f490"

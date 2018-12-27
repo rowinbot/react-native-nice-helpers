@@ -53,3 +53,5 @@ export const getFont = (type, font) =>
     FontLocaleUse.DEFAULT_FONT_TYPE}`
 
 export const renderNewLines = html => html.replace(/\n/g, '</br>')
+
+export const intoHTMLProp = (prop, style) => `${prop}="${style}"`
