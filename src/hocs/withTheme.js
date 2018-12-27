@@ -11,9 +11,23 @@ const withTheme = (WrappedComponent, specificStyle) => {
   const HoCComponent = ({ colors, ...props }) => {
     const propName = (!!specificStyle && specificStyle.prop) || 'theme'
 
-    console.log(colors)
+    return (
+      <Consumer>
+        {theme => {
+          const coloredTheme = theme(colors)
 
-    return null
+          const style =
+            (!!specificStyle && (coloredTheme[specificStyle.name] || null)) ||
+            coloredTheme
+
+          const styleInjection = {
+            [propName]: style
+          }
+
+          return <WrappedComponent {...props} {...styleInjection} />
+        }}
+      </Consumer>
+    )
   }
 
   HoCComponent.displayName = `WithTheme(${getName(WrappedComponent)})`
