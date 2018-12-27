@@ -2,6 +2,9 @@ import React from 'react'
 import changesStatusBar from '../hocs/changesStatusBar'
 import { getType } from './Types'
 
+import NavigationTransitionConfig from './NavigationTransitionConfig'
+import NavigationStyleInterpolator from './NavigationStyleInterpolator'
+
 export class NavigationUse {
   static BottomButton = () => {}
 
