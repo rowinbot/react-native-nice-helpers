@@ -1,16 +1,16 @@
 import providesColors from './providesColors'
 import providesTheme from './providesTheme'
 
-export const providesThemedRouter = (colors, theme, Router) => {
-  const HoCComponent = providesColors(colors, providesTheme(theme, Router))
+export const providesThemedRouter = (Router, colors, theme) => {
+  const HoCComponent = providesColors(providesTheme(Router, theme), colors)
 
   HoCComponent.router = Router.router
 
   return HoCComponent
 }
 
-export const providesColorsRouter = (colors, Router) => {
-  const HoCComponent = providesColors(colors, Router)
+export const providesColorsRouter = (Router, colors) => {
+  const HoCComponent = providesColors(Router, colors)
 
   HoCComponent.router = Router.router
 

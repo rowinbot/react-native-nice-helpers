@@ -4,7 +4,7 @@ import { getName } from '../helpers/HoCs'
 
 export const { Provider, Consumer } = createContext(null)
 
-const providesTheme = (theme, WrappedComponent) => {
+const providesTheme = (WrappedComponent, theme) => {
   const HoCComponent = ({ ...props }) => (
     <Provider value={theme}>
       <WrappedComponent {...props} />
