@@ -47,7 +47,8 @@ export const stackNavigator = (initialScreenName, config = {}) => {
     if (config.customTransitions)
       configObject.transitionConfig = () => ({
         transitionConfig: NavigationTransitionConfig.defaultTransition,
-        screenInterpolator: NavigationStyleInterpolator.forHorizontal
+        screenInterpolator:
+          NavigationStyleInterpolator[config.transitionStyle || 'forHorizontal']
       })
   }
 
