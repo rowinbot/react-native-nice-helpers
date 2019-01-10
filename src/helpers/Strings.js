@@ -6,8 +6,8 @@ export class FontLocaleUse {
   static DEFAULT_FONT_TYPE = 'Regular'
 
   static initialize(font, fontType) {
-    TimeLocaleUse.DEFAULT_FONT = font
-    TimeLocaleUse.DEFAULT_FONT_TYPE = fontType
+    FontLocaleUse.DEFAULT_FONT = font
+    FontLocaleUse.DEFAULT_FONT_TYPE = fontType
   }
 }
 

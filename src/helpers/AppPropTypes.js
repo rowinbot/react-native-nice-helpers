@@ -1,4 +1,4 @@
-export const array = {
+export const arrayPropTypes = {
   determinedLength(expectedLength, props, propName, componentName) {
     if (props[propName]) {
       const arrayPropLength = props[propName].length
@@ -24,8 +24,4 @@ export const array = {
       }
     }
   }
-}
-
-export default {
-  array
 }
