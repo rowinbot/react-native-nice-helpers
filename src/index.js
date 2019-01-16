@@ -24,6 +24,7 @@ export * from './helpers/Validate'
 
 // HoCs
 export { default as asNavigator } from './hocs/asNavigator'
+export { default as changesStatusBar } from './hocs/changesStatusBar'
 export { default as injectProps } from './hocs/injectProps'
 export { default as providesColors } from './hocs/providesColors'
 export { default as providesColorsRouter } from './hocs/providesColorsRouter'
