@@ -1,6 +1,6 @@
 {
   "name": "react-native-nice-helpers",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "Awesome helpers for ReactNative developers that adds stuff one usually need",
   "main": "index.js",
   "repository": {
