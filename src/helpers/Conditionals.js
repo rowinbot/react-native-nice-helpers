@@ -4,6 +4,7 @@ export const isEmpty = value => {
   if (value === undefined && value === null) return true
 
   if (typeof value === 'function') return false
+  if (typeof value === 'boolean') return false
 
   if (value instanceof Array) return !!value && value.length <= 0
 
